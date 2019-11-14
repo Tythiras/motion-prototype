@@ -16,16 +16,15 @@ $file = false;
 $titel = '';
 $template = true;
 
-
 if($page=="/"||$page=="/setup1") {
   $file = "setup1.php";
-} else if($page="/setup2") {
+} else if($page=="/setup2") {
   $file = "setup2.php";
-} else if($page="/setup3") {
+} else if($page=="/setup3") {
   $file = "setup3.php";
-} else if($page="/setup4") {
+} else if($page=="/setup4") {
   $file = "setup4.php";
-} else if($page="/overview") {
+} else if($page=="/overview") {
   $file = "overview.php";
 }
 

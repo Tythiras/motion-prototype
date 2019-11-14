@@ -10,6 +10,18 @@ body, html {
     background: linear-gradient(180deg, rgba(9,9,121,1) 10%, rgba(0,212,255,1) 100%);
     z-index: 1;
 }
+.main-section {
+    position: relative;
+    
+    width: 360px;
+    height: 640px;
+    border: 1px solid black;
+    margin: 50px auto;
+    overflow-y: scroll;
+}
+.main-section::-webkit-scrollbar {
+    display: none; 
+}
 img.float {
     position: absolute;
     right: 25%;
@@ -21,4 +33,27 @@ img.float {
 }
 .text-center {
     text-align: center;
+}
+
+.switchClone {
+    position: relative;
+    display: initial;
+    font-size: 1.25rem;
+    line-height: initial;
+    padding-right: 0.2rem;
+    padding-top: .2rem;
+    cursor: pointer;
+}
+.alignVertically {
+    line-height: 1.6em;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.buttonsContainer {
+    position: absolute;
+    bottom: 20px;
+}
+.buttonsContainer .button {
+    margin-bottom: 25px;
 }
