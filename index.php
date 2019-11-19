@@ -9,7 +9,6 @@ session_start();
 $page = $_SERVER['REQUEST_URI'];
 $page = strtok($page, '?');
 
-include("controllers/db.php");
 include("controllers/functions.php");
 
 $file = false;
@@ -26,8 +25,20 @@ if($page=="/"||$page=="/setup1") {
   $file = "setup4.php";
 } else if($page=="/overview") {
   $file = "overview.php";
+} else if($page=="/assignment") {
+  $file = "assignment.php";
 }
 
+$assignments = [
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
+  ["title" => "Lav 5 englehop", "time" => "13:43"],
+  ["title" => "Spis noget mad", "time" => "14:56"],
+  ["title" => "Lorem ipsum", "time" => "16:20"],
+  ["title" => "Lorem iDolemar", "time" => "16:50"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
+];
 
 if($file) {
     if($template) {

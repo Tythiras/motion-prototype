@@ -8,7 +8,7 @@
             <div class="option">
                 <a href="./setup3" class="button is-info is-inverted is-outlined">Tilbage</a>
             </div>
-            <a href="/profile" class="button is-primary">Gå til min profil</a>
+            <br>
             <a href="/overview" class="button is-success is-large">Gå til oversigt</a>
 
         

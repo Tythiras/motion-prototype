@@ -25,6 +25,8 @@
 .top {
     padding-bottom: 20px;
     border-bottom: 1px solid whitesmoke;
+    overflow: hidden;
+    position: relative;
 }
 .bottom {
 }
@@ -48,51 +50,39 @@
     right: 15px;
     color: #ff6768;
 }
+a {
+    color: white;
+}
 </style>
 
-<div>
-    <div class="section">
-        <div class="top">
-            <a href="./">
-                <span class="icon">
-                    <i class="fas fa-user-cog"></i>
-                </span>
-            </a>
-            <div class="next">
-            </div>
-            <div class="info">
-                <h1 class="title is-3">54 minutter</h1>
-                <h1 class="subtitle is-4">Til næste øvelse</h1>
-                <hr>
-                <h1 class="subtitle is-4"><b>Gå en 10 minutters tur</b></h1>
+<div class="section">
+    <div class="top">
+        <a href="./setup2">
+            <span class="icon">
+                <i class="fas fa-user-cog"></i>
+            </span>
+        </a>
+        <div class="next">
+        </div>
+        <div class="info">
+            <h1 class="title is-3">54 minutter</h1>
+            <h1 class="subtitle is-4">Til næste øvelse</h1>
+            <hr>
+            <h1 class="subtitle is-4"><b>Gå en 10 minutters tur</b></h1>
 
-            </div>
         </div>
-        <div class="bottom">
-            <div class="example">
-                <h1 class="title is-4">Lav 5 armbøjninger</h1>
-                <span class="time">12:00</span>
-            </div>
-            <div class="example">
-                <h1 class="title is-4">Lav 5 englehop</h1>
-                <span class="time">13:43</span>
-            </div>
-            <div class="example">
-                <h1 class="title is-4">Spis noget mad</h1>
-                <span class="time">14:56</span>
-            </div>
-            <div class="example">
-                <h1 class="title is-4">Lorem ipsum</h1>
-                <span class="time">15:00</span>
-            </div>
-            <div class="example">
-                <h1 class="title is-4">Lorem iDolemar</h1>
-                <span class="time">16:20</span>
-            </div>
-            <div class="example">
-                <h1 class="title is-4">Lorem iDolemar</h1>
-                <span class="time">16:20</span>
-            </div>
-        </div>
+    </div>
+    <div class="bottom">
+        <?php
+        foreach($assignments as $key=>$assignment) { ?>
+            <a href="/assignment?key=<?php safe($key); ?>">
+                <div class="example">
+                    <h1 class="title is-4"><?php safe($assignment['title']); ?></h1>
+                    <span class="time"><?php safe($assignment['time']); ?></span>
+                </div>
+            </a>
+        <?php
+        }
+        ?>
     </div>
 </div>

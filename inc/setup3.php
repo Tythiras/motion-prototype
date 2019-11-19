@@ -4,7 +4,7 @@
     <div class="section">
         <h2 class="title is-2">Dit job</h2>
         <section>
-            <h3 class="title is-5">Holder du nogle væsentligepauser i løbet af din dag?</h3>
+            <h3 class="title is-5">Holder du nogle væsentlige pauser i løbet af din dag?</h3>
             <div class="field">
                 <label class="switchClone">Nej</label>
                 <input id="switchRoundedDefault" type="checkbox" class="switch is-rounded is-medium is-info" checked="checked">
