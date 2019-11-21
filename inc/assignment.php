@@ -10,6 +10,10 @@ $assignment = $assignments[$_GET['key']];
 </style>
 
 <div class="section">
+    <a href="./overview" class="back">
+        <i class="fa fa-arrow-left"></i>
+        Tilbage
+    </a>
     <div class="example">
         <h1 class="title is-4"><?php safe($assignment['title']); ?></h1>
         <span class="time"><b>Anbefalet tidspunkt: <?php safe($assignment['time']); ?></b></span>

@@ -67,3 +67,9 @@ img.float {
 .buttonsContainer .button {
     margin-bottom: 25px;
 }
+a.back, a.back:hover {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
