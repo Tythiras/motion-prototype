@@ -18,7 +18,10 @@
             </div>
             <hr>
             <div class="field">
-                <h3 class="subtitle is-5">Hvornår er du på arbejde?</h3>
+                <h3 class="subtitle is-5">
+                    Hvornår er du på arbejde? 
+                    <span class="has-tooltip-left has-tooltip-multiline" data-tooltip="Dette hjælper os med at planlægge dine aktiviteter bedst muligt når du er på arbejde."><i class="fa fa-info-circle"></i></span>
+                </h3>
                 <div class="columns">
                     <div class="column">
                         <div class="select">

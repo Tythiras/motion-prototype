@@ -10,6 +10,8 @@
                 <input id="switchRoundedDefault" type="checkbox" class="switch is-rounded is-medium is-info" checked="checked">
                 <label for="switchRoundedDefault">Ja</label>
             </div>
+            <span class="has-tooltip-bottom has-tooltip-multiline" data-tooltip="Dette hjælper os med at planlægge dine øvelser i løbet af dagen således det passer bedst hvornår du har pause."><i class="fa fa-info-circle"></i></span>
+
             <div id="pauseContainer">
                 <hr>
 

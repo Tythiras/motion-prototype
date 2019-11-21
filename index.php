@@ -25,19 +25,21 @@ if($page=="/"||$page=="/setup1") {
   $file = "setup4.php";
 } else if($page=="/overview") {
   $file = "overview.php";
+} else if($page=="/overview2") {
+  $file = "overview_circle.php";
 } else if($page=="/assignment") {
   $file = "assignment.php";
 }
 
 $assignments = [
-  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
-  ["title" => "Lav 5 englehop", "time" => "13:43"],
-  ["title" => "Spis noget mad", "time" => "14:56"],
-  ["title" => "Lorem ipsum", "time" => "16:20"],
-  ["title" => "Lorem iDolemar", "time" => "16:50"],
-  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
-  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
-  ["title" => "Lav 5 armbøjninger", "time" => "12:00"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00", "icon"=>"fa fa-dumbbell"],
+  ["title" => "Lav 5 englehop", "time" => "13:43", "icon"=>"fa fa-dumbbell"],
+  ["title" => "Spis noget mad", "time" => "14:56", "icon"=>"fa fa-dumbbell"],
+  ["title" => "Lorem ipsum", "time" => "16:20", "icon"=>"fa fa-dumbbell"],
+  ["title" => "Lorem iDolemar", "time" => "16:50", "icon"=>"fa fa-quidditch"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00", "icon"=>"fa fa-bicycle"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00", "icon"=>"fa fa-bicycle"],
+  ["title" => "Lav 5 armbøjninger", "time" => "12:00", "icon"=>"fa fa-bicycle"],
 ];
 
 if($file) {

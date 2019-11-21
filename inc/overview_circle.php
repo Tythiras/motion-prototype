@@ -29,7 +29,9 @@ $timeToNext = $now->diff($next);
 }
 .top {
     padding-top: 20px;
+    padding-bottom: 87%;
     width: 100%;
+    height: 0;
     overflow: hidden;
     position: relative;
 }
@@ -74,22 +76,21 @@ box-shadow: 0px -14px 51px -27px rgba(0,0,0,1);
 a, a:hover {
     color: white;
 }
-.progress {
-    height: 0.2rem;
-}
 </style>
 
 <div class="section">
     <div class="top">
-        <a href="./setup2" style="">
+        <a href="./setup2">
             <span class="icon">
                 <i class="fas fa-user-cog"></i>
             </span>
         </a>
+        <div class="next">
+        </div>
         <div class="info">
             <h1 class="title is-3"><?php safe($timeToNext->i); ?> minutter</h1>
             <h1 class="subtitle is-4">Til næste øvelse</h1>
-            <progress class="progress is-success" value="<?php safe($timeToNext->i); ?>" max="60"></progress>
+            <hr>
             <h1 class="subtitle is-4"><b><?php safe($assignments[0]['title']); ?></b></h1>
 
         </div>
